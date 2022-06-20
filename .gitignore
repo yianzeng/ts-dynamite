@@ -1,0 +1,5 @@
+# Build output
+dist
+
+# Depedency directories
+node_modules
