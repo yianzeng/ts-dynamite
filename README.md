@@ -13,7 +13,7 @@ It's possible to get something working very quickly - there are already a few ve
 ## Getting Started
 
 1. Read the rules at https://dynamite.softwire.com.
-2. Fork this repo and open it in VS Code
+2. Fork this repo and open it in IntelliJ
 3. Install the dependencies with `npm install`
 4. Check that everything is working ok.
 
