@@ -17,7 +17,7 @@ class Bot {
         'D': ['W']
     }
 
-    winnningPairs = {
+    winningPairs = {
         'R': ['S'],
         'S': ['P'],
         'P': ['R'],
@@ -45,14 +45,14 @@ class Bot {
         console.log(myLastMove)
         if (this.losingPairs[myLastMove].includes(oppLastMove)) { // if i lost, return winning thing, unless winning thing is waterballoon
 
-            let futureMove = this.getRandomMove(this.winnningPairs[myLastMove])
+            let futureMove = this.getRandomMove(this.winningPairs[myLastMove])
             if (futureMove == 'D' && this.myDynamiteCount < 100) {
                 this.myDynamiteCount += 1;
             } else {
                 futureMove = this.getRandomMove(['R', 'P', 'S'])
             }
             return futureMove
-        } else if (this.winningPairs[myLastMove].includes(oppLastMove){ // if i won, choose a different tactic
+        } else if (this.winningPairs[myLastMove].includes(oppLastMove)) { // if i won, choose a different tactic
             const index = array.indexOf(myLastMove);
             let futureMove = this.getRandomMove(array.splice(index, 1))
             if (futureMove == 'D') {
